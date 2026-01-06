@@ -16,4 +16,4 @@
 
 # Moto Camera fogos
 PRODUCT_PACKAGES += \
-    MotCamera4-fogos
+    MotCamera4
