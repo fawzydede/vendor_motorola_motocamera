@@ -19,6 +19,26 @@ android_app_import {
         enabled: false,
     },
     product_specific: true,
+    required: [
+        "MotCamera3AI.odex",
+        "MotCamera3AI.vdex",
+    ],
+}
+
+prebuilt_etc {
+    name: "MotCamera3AI.odex",
+    src: "proprietary/product/app/MotCamera3AI/oat/arm64/MotCamera3AI.odex",
+    sub_dir: "app/MotCamera3AI/oat/arm64",
+    product_specific: true,
+    filename: "MotCamera3AI.odex",
+}
+
+prebuilt_etc {
+    name: "MotCamera3AI.vdex",
+    src: "proprietary/product/app/MotCamera3AI/oat/arm64/MotCamera3AI.vdex",
+    sub_dir: "app/MotCamera3AI/oat/arm64",
+    product_specific: true,
+    filename: "MotCamera3AI.vdex",
 }
 
 android_app_import {
@@ -36,6 +56,26 @@ android_app_import {
         "Aperture",
         "Camera2",
     ],
+    required: [
+        "MotCamera4.odex",
+        "MotCamera4.vdex",
+    ],
+}
+
+prebuilt_etc {
+    name: "MotCamera4.odex",
+    src: "proprietary/product/priv-app/MotCamera4/oat/arm64/MotCamera4.odex",
+    sub_dir: "priv-app/MotCamera4/oat/arm64",
+    product_specific: true,
+    filename: "MotCamera4.odex",
+}
+
+prebuilt_etc {
+    name: "MotCamera4.vdex",
+    src: "proprietary/product/priv-app/MotCamera4/oat/arm64/MotCamera4.vdex",
+    sub_dir: "priv-app/MotCamera4/oat/arm64",
+    product_specific: true,
+    filename: "MotCamera4.vdex",
 }
 
 android_app_import {
@@ -48,6 +88,26 @@ android_app_import {
     },
     privileged: true,
     system_ext_specific: true,
+    required: [
+        "MotorolaSettingsProvider.odex",
+        "MotorolaSettingsProvider.vdex",
+    ],
+}
+
+prebuilt_etc {
+    name: "MotorolaSettingsProvider.odex",
+    src: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/oat/arm64/MotorolaSettingsProvider.odex",
+    sub_dir: "priv-app/MotorolaSettingsProvider/oat/arm64",
+    system_ext_specific: true,
+    filename: "MotorolaSettingsProvider.odex",
+}
+
+prebuilt_etc {
+    name: "MotorolaSettingsProvider.vdex",
+    src: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/oat/arm64/MotorolaSettingsProvider.vdex",
+    sub_dir: "priv-app/MotorolaSettingsProvider/oat/arm64",
+    system_ext_specific: true,
+    filename: "MotorolaSettingsProvider.vdex",
 }
 
 dex_import {
