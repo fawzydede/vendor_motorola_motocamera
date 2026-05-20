@@ -44,4 +44,6 @@ PRODUCT_PACKAGES += \
     com.motorola.motosignature \
     moto-core_services \
     moto-settings \
-    motsettings
+    motsettings \
+    libAncFaceDetect \
+    libancbase_fd
